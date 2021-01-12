@@ -1,0 +1,542 @@
+/*
+Theme Name: Drift School WP Theme.
+Theme URI:
+Author: Fabrizio Del Tufo
+Author URI:
+Description: WordPress Theme for Drift School.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns,three-columns, responsive.
+Text Domain: DriftSchoolWP
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("image/cover.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+
+.customize-support .header{top:32px;}
+
+.header{
+  border: 0px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: rgb(0, 0, 0, 0.8); */
+  background: white;
+  position:  fixed;
+  width: 100%;
+  top: 0px;
+  left:0px;
+  z-index: 100;
+}
+
+.header-logo {
+  margin: auto 10px;
+}
+
+.header-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-menu {
+  margin: 10px;
+}
+
+.header-menu .menu-item{border: 1px solid #000;  display: inline-block; padding: 10px;}
+.header-menu .menu-item:hover{background: #000;}
+.header-menu .menu-item:hover a{color: #fff;}
+
+
+
+/* ONE SCROLL PAGE: COVER SECTION */
+.cover-layer {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 236px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 30px;
+}
+
+.cover-layer h1 {
+  border: 0px solid red;
+  font-size: 80px;
+  margin:0;
+}
+
+.cover-layer p {
+  border: 0px solid red;
+  font-size: 40px;
+  margin:0;
+}
+
+
+/* ONE SCROLL PAGE: SLIDER SECTION */
+.slider {
+  background-image: url("image/cover2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin-top: 250px;
+}
+
+.slider h2 {
+  font-size: 80px;
+  color: black;
+  text-align: right;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom: 90px
+}
+
+.slider p {
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 50px;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  padding-right: 100px
+}
+
+
+/* ONE SCROLL PAGE: CONTACT SECTION */
+
+.contatti {
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background: #ddd;
+  padding: 50px;
+}
+
+.contatti-title h2{
+  font-size: 40px;
+}
+
+.contatti-title p{
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contatti-area{
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.area-rif {
+  border: 1px solid #fff;
+  flex-basis: 50%;
+}
+
+.rif {
+  text-align: center;
+  width: 80%;
+  height: 100px;
+  background: #fff;
+  margin: 50px auto;
+  padding:20px;
+}
+
+.rif h2{
+  padding-bottom:10px;
+}
+
+.area-map {
+  border: 1px solid #fff;
+  flex-basis: 50%;
+  height: 500px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 640px;
+  height: 500px;
+}
+
+/* SOCIALS */
+.socials{background:#fff; margin: 0px}
+.socials-list{margin: 0px; padding: 0px; text-align: center; }
+
+.socials .menu-item{border: 0px solid #fff; padding: 10px;display: inline-block;}
+.socials-list a{color: #000}
+.socials-list a:hover{color: #ddd}
+
+
+
+.footer {
+  border: 0px solid red;
+  width: 100%;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 10px
+}
+
+.socket {
+  border: 0px solid red;
+  width: 100%;
+  text-align: center;
+  background: #ddd;
+  color: #000;
+  padding: 10px;
+  font-size: 12px
+}
+
+/* ----------------------- PAGE: SERVIZI--------------------  */
+
+
+.servizi {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #ddd;
+  padding: 50px;
+}
+
+.servizi-btn {
+  padding-top: 100px;
+}
+
+.servizi-title h2{
+  font-size: 40px;
+}
+
+.servizi-title p{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.post-categories{
+  list-style-type: none;
+}
+
+.servizi-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto;
+}
+
+.servizio {
+  flex-basis: 25%;
+  background: white;
+  border: 1px solid black;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  margin: 30px 50px;
+
+}
+
+.servizio img {
+  width: 100%;
+}
+
+.servizi a button{
+  width: 300px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 30px;
+  font-weight: bold;
+  background: #fff;
+}
+
+.servizi a button:hover{
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* -------------------------- PAGE: CONTATTI -------------- */
+.contatti-btn {
+  padding-top: 100px;
+}
+
+
+
+
+
+/*  ----------------------------------------------- */
+/*   ! tablet  */
+/*  ----------------------------------------------- */
+@media(max-width: 998px) {}
+
+  /*  ----------------------------------------------- */
+  /*   ! Smartphone  */
+  /*  ----------------------------------------------- */
+  @media(max-width: 767px) {
+
+
+
+    body, html {
+      background-image: url("image/cover.jpg");
+      background-position: top;
+      background-size: contain;
+    }
+
+    .customize-support .header{
+      border: 0px solid red;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background: white;
+      position: relative;
+      width: 100%;
+      top: 0px;
+      left:0px;
+      z-index: 100;
+    }
+
+    .header-hamburger{
+      padding: 10px;
+    }
+
+    .header-hamburger span{
+      border-top: 3px solid black;
+      width: 30px;
+      padding: 3px;
+      display: block;
+    }
+
+
+    /* HEADER */
+    .header-menu{
+      margin: 0px;
+      flex-basis: 100%;
+      display:none;
+    }
+
+    .header-menu .menu-item{
+      border-bottom: 1px solid black;
+      display: block;
+      padding: 10px;
+      margin: 10px auto;
+      text-align: center;
+    }
+
+    .header-menu-open{
+      display: block;
+    }
+
+    /* ONE SCROLL PAGE: COVER */
+    .cover-layer {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px;
+      width: 100%;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: -190px;
+      padding:10px;
+    }
+
+    .cover-layer h1 {
+      border: 0px solid red;
+      font-size: 40px;
+      margin:0;
+    }
+
+    .cover-layer p {
+      border: 0px solid red;
+      font-size: 20px;
+      margin:0;
+    }
+
+    /* ONE SCROLL PAGE: SLIDER */
+    .slider {
+      background-image: url("image/cover2.jpg");
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      height: 600px;
+      margin-top: 90px;
+    }
+
+    .slider h2 {
+      font-size: 40px;
+      color: black;
+      text-align: right;
+      padding-top: 200px;
+      padding-right: 15px;
+      padding-bottom: 10px
+    }
+
+    .slider p {
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    /* ONE SCROLL PAGE: CONTATTACI */
+    .contatti {
+      height: 1300px;
+      margin-top: -160px;
+    }
+
+    .contatti-title h2, .servizi-title h2 {
+      font-size: 40px;
+    }
+
+    .contatti-title p, .servizi-title p {
+      font-size: 20px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .contatti-area{
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .area-rif {
+      border: 1px solid #fff;
+      flex-basis: 100%;
+    }
+
+    .area-map {
+      border: 1px solid #fff;
+      flex-basis: 100%;
+      height: 500px;
+    }
+
+    /* PAGE: SERVIZI  */
+
+
+    .servizi {
+      text-decoration: none;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      background: #ddd;
+      padding: 50px;
+    }
+
+    .servizi-btn {
+      padding-top: 100px;
+    }
+
+    .servizi-title h2{
+      font-size: 40px;
+    }
+
+    .servizi-title .category{
+
+    }
+
+    .servizi-title p{
+      font-size: 20px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .servizi-area {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .servizio {
+      flex-basis: 100%;
+      background: white;
+      border: 1px solid black;
+      height: 300px;
+      padding: 20px;
+      text-align: center;
+      margin: 30px 50px;
+
+    }
+
+    .servizio img {
+      width: 100%;
+    }
+
+    .servizi a button{
+      width: 300px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 15px;
+      margin-top: 30px;
+      font-weight: bold;
+      background: #fff;
+    }
+
+    .servizi a button:hover{
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+
+
+
+
+
+
+    /* -------------------------- PAGE: CONTATTI -------------- */
+    .contatti-btn {
+      padding-top: 260px;
+      height: 1500px;
+    }
+
+
+
+
+    /* SOCIALS */
+    .socials {
+      padding: 0px;
+      width: 100%;
+    }
+
+    .socials-list {
+      margin: 0px;
+      padding: 0px;
+      text-align: center
+    }
+
+    .socials-item {
+      border-bottom: 1px solid lightgrey;
+      display: block;
+      padding: 5px;
+      font-weight: bold;
+    }
+
+    .socials-item a:hover {
+      color: red
+    }
+  }
